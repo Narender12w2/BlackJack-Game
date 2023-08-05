@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BLACKJACK</title>
+</head>
+<body>
+    <div class="container">
+        <div style="background:  url('bg-image/blackjack21.png'); padding: 25px; height: 7vh; font-size: 50px; color: white;">
+            
+        </div> 
+        <div style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url('bg-image/blackjack1.png'); padding: 15px ; font-size: 25px;color: white;">
+            <span id="blackjack-result">Let's Play</span>
+        </div>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn btn-primary" id="blackjack-hit-btn" onclick="blackjackHit()">Hit</button>
+                <button class="btn btn-warning" id="blackjack-stand-btn" onclick="dealerLogic()">Stand</button>
+                <button class="btn btn-danger" id="blackjack-deal-btn" onclick="blackjackdeal()">Deal</button>
+<!--                 <a class="btn btn-green" id="blackjack-reset-btn" href="http://127.0.0.1:5500/index.html">Reset</a> -->
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,72 @@
+.btn{
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 19px;
+    margin: 3px;
+}
+.btn:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: blue;
+    color: white;
+}
+.btn-warning{
+    background-color: gold;
+    color: black;
+}
+.btn-danger{
+    background-color: red;
+    color: white;
+}
+/* .btn-green{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+.btn-green a{
+    text-decoration: none;
+    color: white;
+} */
+.container{
+    text-align: center;
+    border: 2px solid black;
+    margin: 0px auto;
+    width: 97%;
+}
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    border: 0.5px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url('bg-image/blackjack1.png');
+    color: #fff;
+}
+.flex-blackjack-row-1 div{
+    border: 2px solid #fff;
+    flex:1;
+    padding: 10px;
+    text-align: center;
+    height: 370px;
+}
+.flex-blackjack-row-1 img{
+    padding: 3px;
+}
+
+.flex-blackjack-row-2{
+    padding: 20px;
+}
+.flex-blackjack-row-3{
+    padding: 15px;
+}
+table,th,td{
+    padding: 4px;
+    padding:0 25px ;
+    border-collapse: collapse;
+    border: 1.5px solid white;
+}
